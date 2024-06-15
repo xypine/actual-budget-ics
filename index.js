@@ -86,7 +86,7 @@ setInterval(update, 24 * 60 * 60 * 1000);
 import express from 'express';
 const app = express();
 // provide a health check endpoint
-app.get('/health', (_req, res) => res.send('OK'));
+app.get('/', (_req, res) => res.send('OK'));
 // provide the ical file
 app.get('/actual.ics', (req, res) => {
 	const protocol = req.headers['x-forwarded-proto'] || req.protocol;
