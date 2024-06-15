@@ -1,0 +1,6 @@
+# downloaded dependencies
+node_modules
+# cache
+data
+# generated files
+*.ics
